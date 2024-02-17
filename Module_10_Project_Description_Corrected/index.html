@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Store</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-logo">
+            <a href="#">RecipeStore</a>
+        </div>
+        <div class="nav-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count" class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <main id="recipe-list" class="recipe-list">
+        <!-- Recipes will be added here by JS -->
+    </main>
+
+    <!-- Modal for Cart -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be added here by JS -->
+            </div>
+            <div class="cart-total">
+                Total: $<span id="total-amount">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
